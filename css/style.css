@@ -1,0 +1,248 @@
+/* html5doctor.com Reset v1.6.1 - http://cssreset.com */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}
+
+body{
+	background: #BCBCBC;
+	width: 100%;
+}
+
+
+#game{
+	background: #000;
+}
+
+#box0{top:15px; left: 58px;}
+#box1{top:90px; left: 25px;}
+#box2{top:104px; left: 194px;}
+#box3{top: 104px; left: 335px;}
+#box4{top:16px; left: 260px;}
+#box5{top:15px; left: 488px;}
+#box6{top:97px; left: 458px;}
+
+.box{
+		display: block;
+		position: relative;
+		width: 32px;
+		height: 64px;
+		float: left;
+		cursor: pointer;
+}
+
+.char1{ background: url(../img/02.png);}
+.char2{ background: url(../img/03.png);}
+.char3{background: url(../img/04.png);}
+.char4{background: url(../img/05.png);}
+.char5{background: url(../img/06.png);}
+.char6{background: url(../img/07png);}
+.char7{background: url(../img/05.png);}
+
+
+#wrapper{
+	display: block;
+	margin: auto;
+	
+
+}
+
+#city{
+	display: block;
+	margin: auto;
+	
+	width: 704px;
+	height: 175px;
+	background: url(../img/city.png);
+}
+
+#board{
+	display: block;
+	width: 256px;
+	height: 49px;
+	margin: 20px auto 40px;
+
+	background: url(../img/board.png);
+}
+
+#board p{
+	font-family: Arial;
+	color: #FFF;
+	font-weight: bold;
+
+}
+
+#board .score{
+	font-size: 10px;
+	display: block;
+	position: relative;
+	top: 14px;
+	left: 54px;
+}
+
+#board .round{
+
+	font-size: 14px;
+	display: block;
+	position: relative;
+	top: 0px;
+	left: 132px;
+	
+}
+
+#board .miss{
+	font-size: 10px;
+	display: block;
+	position: relative;
+	top: -2px;
+	left: 144px;	
+}
+
+#board .top{
+	font-size: 10px;
+	display: block;
+	position: relative;
+	top: -20px;
+	left: 200px;
+		
+}
+
+#bullet-container{
+	display: block;
+	width: 256px;
+	height: 14px;
+	top: 23px;
+	float: left;
+	background: #BCBCBC;
+}
+
+#bullet-container .bullet{
+	display: block;
+	margin-left: 2px; 
+	margin-right: 1px;
+	float: left;
+	width: 6px;
+	height: 14px;
+	background: url(../img/bullet.png);
+}
+
+
+#bang{
+	display: block;
+	position: absolute;
+	z-index: 1;
+	width: 66px;
+	height: 49px;
+	background: url(../img/bang.png);
+}
+
+.heart{
+	display: block;
+	width: 18px;
+	height: 18px;
+	background: url(../img/heart.png);
+	float: left;
+	margin: 1px 5px 0 0;
+}
+
+#game-over{
+	display: block;
+	width: 100%;
+	height: 175px;
+	background: #FFF;
+	opacity: 0.8;
+	position: absolute;
+	z-index: 5;
+	color: #000;
+}
+#game-over h1{
+	font-family: Arial;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#game-over a{
+	display: block;
+	width: 100px;
+	height: 20px;
+	padding: 10px;
+	margin: 10px 0;
+	background: #000;
+	border-radius: 5px;
+	color: #FFF;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#highscore, #nickname{
+	
+	display: block;
+	background: #000;
+	width: 100%;
+	height: 224px;
+	opacity: 0.8;
+	position: absolute;
+	z-index: 4;
+	color: #FFF;
+	text-align: center;
+	font-family: Arial;
+}
+
+#highscore h1, #nickname h1{
+	font-size: 26px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 15px 0;
+	font-family: Arial;
+}
+
+#highscore .close, #nickname .close{
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: #FFF;
+	border-radius: 20px;
+	position: absolute;
+	margin: 10px 0 0 900px;
+	cursor: pointer;
+}
+
+  #usr{
+	width: 100px;
+	height: 25px;
+	position: relative;
+	margin: 10px auto;
+}
+
+#nickname a{
+	display: block;
+	text-decoration: none;
+	background: #FFF;
+	width: 40px;
+	height: 15px;
+	text-align: center;
+	padding: 5px;
+	color: #000;
+	margin: auto;	
+}
+
+#show-hs{
+	width: 50px;
+	color: #FFF;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: Arial;
+	position: relative;
+	top:20px;
+	left: 170px;
+	cursor: pointer;
+	
+}
+
+ol{
+   width: 100px;
+    margin: auto;
+    
+}
+
+
